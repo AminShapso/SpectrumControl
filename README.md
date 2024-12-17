@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Icon.ico?raw=true" width="24" alt="App Icon"> Keysight Spectrum Control
+# <img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Icon.ico" width="24" alt="App Icon"> Keysight Spectrum Control
 
 This app provides a straightforward GUI for controlling Keysight spectrum analyzers,
 designed to make parameter adjustments easier and more accessible.
@@ -29,14 +29,14 @@ Built with KivyMD and PyVisa, the app is a practical tool for anyone looking to 
 <br/>
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Screenshot.png?raw=true" width="360" alt="App Screenshot">
+<img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Screenshot.png" width="360" alt="App Screenshot">
 
 
 
 <br/>
 
 ## Demo
-<img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Demo.gif?raw=true" width="360" alt="App Demo">
+<img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Demo.gif" width="360" alt="App Demo">
 
 
 
