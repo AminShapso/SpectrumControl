@@ -29,14 +29,14 @@ Built with KivyMD and PyVisa, the app is a practical tool for anyone looking to 
 <br/>
 
 ## Screenshot
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/assets/Screenshot.png?raw=true" width="360" alt="App Screenshot">
+<img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Screenshot.png?raw=true" width="360" alt="App Screenshot">
 
 
 
 <br/>
 
 ## Demo
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/assets/Demo.gif?raw=true" width="360" alt="App Demo">
+<img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Demo.gif?raw=true" width="360" alt="App Demo">
 
 
 
