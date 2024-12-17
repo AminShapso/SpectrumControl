@@ -1,156 +1,67 @@
-<!--- Icon image with a summary of the app  -->
+# <img src="https://raw.githubusercontent.com/AminShapso/SpectrumControl/refs/heads/main/assets/Icon.ico?raw=true" width="24" alt="App Icon"> Keysight Spectrum Control
 
-# <img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/assets%20git/icon.png?raw=true" width="24" alt="App Icon"> TicTic-TacTac-ToeToe with KivyMD
+This app provides a straightforward GUI for controlling Keysight spectrum analyzers,
+designed to make parameter adjustments easier and more accessible.
+Using the app, you can set key parameters such as Impedance, Coupling, Average Type, Attenuation, Reference Levels, Frequency Range, and Bandwidth.
+Additionally, it allows you to manage trace settings, including selecting trace types and enabling or disabling them as needed.
 
-This app is a cross-platform Tic-Tac-Toe game, which was originally developed in Tkinter but now has been converted to Kivy for Android support.
+Built with KivyMD and PyVisa, the app is a practical tool for anyone looking to simplify the process of working with spectrum analyzers.
 
-* The game is scalable and therefore can be used on multiple devices.
-* The game supports 2 to 6 players.
-* You can play against a ghost player.
-* The grid is scalable up to 10 by 10 grid, which can be also non-symmetric.
-* The number of symbols in sequence for a win can be also adjusted (or turned off).
 
 
 <br/>
 
+## Controlled parameters
+
+* Impedance: choose between 50ohm or 75ohm.
+* Coupling: choose AC or DC.
+* Average Type: 3 options: LogPwr (LOG), RMS, Voltage (SCAL).
+* Attenuation: enter number in dB; default = 10dB.
+* Reference Level: enter number in dBm; default = 0dBm. Set to 10 to offset for external 100ohm, or to 20 to offset for external 500ohm.
+* Y-axis Reference Level: enter number in dBm; default = 0dBm. This only affects the visuals, not the measurements.
+* Start Frequency: enter number in kHz.
+* Stop Frequency: enter number in kHz.
+* Resolution Bandwidth: enter number in kHz.
+* Video Bandwidth: enter number in kHz.
 
 
-<!--- Installation Instructions -->
-
-## Installation Instructions
-
-Go to my [releases tab in this repo](https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/releases) and download the latest .apk from there.  
-OR  
-Download from the direct link from [here](https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/releases/latest/download/TicTacToe-1.0-arm64-v8a_armeabi-v7a-debug.apk)
-  
-You may need to enable installation from unknown sources.  
-See this tutorial for more help:  
-[https://www.androidauthority.com/how-to-install-apks-31494/](https://www.androidauthority.com/how-to-install-apks-31494/)
-
-<br/>
-<div dir="rtl">
-
-## הוראות הורדה Installation Instructions (Hebrew) 
-
-לכו אל [אתר זה](https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/releases) ותלחצו על הקובץ .apk   
-או (הדרך הפשוטה יותר)  
-לכו ל[קישור](https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/releases/latest/download/TicTacToe-1.0-arm64-v8a_armeabi-v7a-debug.apk) הזה שאוטומטית יתחיל את ההורדה  
-
-יכול להיות שתצטרכו להדליק "יישומים לא מוכרים" בהגדרות.
-#### הסבר על התהליך הזה: 
-תיכנסו להגדרות המכשיר > אבטחה > וסמנו את Unknown sources (יישומים לא מוכרים) בדפדפן שלכם, אשרו את התיבה שנפתחת ואז תפתחו את הקובץ.
-
-</div>
-<br/>
-
-
-<!--- Game Instructions - Main menu  -->
-
-## Game Instructions
-
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/Screenshots/Tutorial/02%20Main%20Menu%20Screen%20with%20annotations.jpg?raw=true" width="360" align="left" alt="Main Menu with annotations">
 
 <br/>
 
-1. Number of Players:  
-   Choose the number of players ranging from 2 to 6, "Ghost" player included.
-
-2. Ghost:  
-   Play against my algorithm.
-
-3. Grid:    
-   Choose your grid size ranging from 3 to 10.  
-   It can be asymmetrical (like 3 by 10).
-
-4. Symbol Sequence:  
-   Choose the number of symbols in a series for the winner to be chosen, ranging from 2 to 10.  
-   Each axis (column, row, and diagonal) can be controlled separately.  
-   It can be also turned off.
-
-5. Start Game:  
-   Click here to start the game.
-
-<br/><br/><br/>
+## Screenshot
+<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/assets/Screenshot.png?raw=true" width="360" alt="App Screenshot">
 
 
 
-<!--- Game Instructions - Game screen  -->
-
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/Screenshots/Tutorial/03%20Game%20Screen.jpg?raw=true" width="360" align="left" alt="Game Screen">
-
-<br/><br/>
-
-1. Back to Menu:  
-   Exit the game and go back to the main menu (game status and scores are not saved).
-
-2. Reset Game:  
-   Reset the current board without resetting the scores.
-
-3. Reset Results:    
-   Reset the scores without resetting the current board.
-
-4. View Scores:  
-   See the current scores.  
-   Scores are reset when you exit back to the main menu.
-
-<br/><br/><br/><br/><br/><br/><br/>
-
-
-
-<!--- Game Instructions - Game example  -->
-
-#### An example of a game of 3 players, with a grid of 6x4, with only the diagonal sequence enabled:
-
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/Screenshots/Tutorial/04%20Game%20Example%20-%20Settings.jpg?raw=true" width="360" align="left" alt="Game Screen">
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/Screenshots/Tutorial/05%20Game%20Example%20-%20In%20game.jpg?raw=true" width="360" align="left" alt="Game Screen">
-
-
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br><br/><br/><br/><br/><br/><br><br/><br/>
-
-
-
-<!--- Demo + Requirements + To do list -->
-
+<br/>
 
 ## Demo
+<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/assets/Demo.gif?raw=true" width="360" alt="App Demo">
 
-
-<img src="https://github.com/AminShapso/Application04_TicTic-TacTac-ToeToe/blob/main/assets%20git/demo.gif?raw=true" width="360" alt="App Demo">
 
 
 <br/>
 
 ## Requirements
 
-* certifi==2024.6.2
-* charset-normalizer==3.3.2
-* Cython==3.0.10
-* docutils==0.21.2
-* idna==3.7
 * Kivy==2.3.0
+* Kivy-Garden==0.1.5
+* PyVISA==1.14.1
+* PyVISA-py==0.7.2
+* Pygments==2.18.0
+* certifi==2024.8.30
+* charset-normalizer==3.4.0
+* docutils==0.21.2
+* idna==3.10
 * kivy-deps.angle==0.4.0
 * kivy-deps.glew==0.3.1
-* kivy-deps.sdl2==0.7.0
-* Kivy-Garden==0.1.5
-* Pygments==2.18.0
-* pyjnius==1.6.1
+* kivy-deps.sdl2==0.8.0
+* kivymd==1.2.0
+* pillow==11.0.0
 * pypiwin32==223
-* pywin32==306
+* pywin32==308
 * requests==2.32.3
-* urllib3==2.2.2
-
-
-<br/>
-
-## For future development
-
-* Add animations.
-* Option to save scores.
-
-
-<br/>
-
-## Usage
-
-APK File: "\bin\" OR "Releases" tab in GitHub
+* tabulate==0.9.0
+* typing_extensions==4.12.2
+* urllib3==2.2.3
+* pyjnius==1.6.1
