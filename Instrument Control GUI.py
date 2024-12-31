@@ -11,7 +11,7 @@ This is only a GUI for the Spectrum Control.
 The script that does the controlling is "Spectrum_Keysight_N9010.py"
 
 Use this to convert to EXE:
-pyinstaller --noconfirm --onedir --windowed --contents-directory "Spectrum Control" --icon "Icon.ico" --add-data "Instrument Control GUI.kv;." --add-data "Icon.png;." -hidden-import=pyvisa_py "Instrument Control GUI.py"
+pyinstaller --noconfirm --onedir --windowed --contents-directory "Spectrum Control" --icon "Icon.ico" --add-data "Instrument Control GUI.kv;." --add-data "Icon.png;." --hidden-import=pyvisa_py "Instrument Control GUI.py"
 """
 
 
@@ -287,8 +287,8 @@ class InstrumentControlGUI(MDApp):
 
     def get_gui_values(self):
         """Get all GUI values before configuring the Spectrum."""
-        self.rbw = self.check_if_bw_is_0(self.rbw, "rbw")
-        self.vbw = self.check_if_bw_is_0(self.vbw, "vbw")
+        self.rbw = self.check_if_bw_is_0(self.root.ids.rbw.text, "rbw")
+        self.vbw = self.check_if_bw_is_0(self.root.ids.vbw.text, "vbw")
         self.impedance = self.root.ids.impedance.text
         self.attenuation = self.root.ids.attenuation.text
         self.reference_level = self.root.ids.reference_level.text
